@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation Centers</title>
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .containerss {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .center {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px 5px;
+        }
+
+        .center h2 {
+            margin-bottom: 10px;
+        }
+
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 75%;
+            /* Aspect ratio 4:3 (width:height) */
+            margin-bottom: 10px;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .navbarv {
+            background-color: black;
+            width: 18%;
+            height: 100vh;
+            /* adjust width as needed */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .containers {
+            width: 100%;
+            display: flex;
+        }
+
+        .navv {
+            display: flex;
+            flex-direction: column;
+            padding-top: 120px;
+            /* adjust width as needed */
+        }
+
+        .navbarv a {
+            display: block;
+            padding: 30px 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbarv a:hover {
+            background-color: #333;
+            /* darker shade of black */
+        }
+    </style>
+</head>
+
+<body style="background-image:url('') !important">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.webp" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service2.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+
+            </ul>
+            <button class="call-us-btn">
+                <a href="tel:9665913598">Call Us Tollfree</a>
+            </button>
+            <div class="social-icons">
+
+                <a href="https://www.facebook.com/profile.php?id=100068163132836&mibextid=kFxxJD" target="_blank"><img
+                        src="facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/pooja_rathod_26?utm_source=qr&igsh=cDE2aDQwc3gzajkx"
+                    target="_blank"><img src="instagram.avif" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/pooja-rathod-b364a8266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"><img src="linkedin.avif" alt="LinkedIn"></a>
+
+            </div>
+
+        </nav>
+    </header>
+    <div class="containers">
+
+        <div class="navbarv">
+            <div class="navv">
+                <a href="vnav.html">FAQ</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="recycling.html">Recycling Centers</a>
+                <a href="ratings.html">Ratings & Reviews</a>
+                <a href="tow.html">Payment</a>
+            </div>
+        </div>
+        <div class="containerss">
+            <div class="center">
+                <h2>Operation Center 1</h2>
+                <p>Address: Cidco, Sambhaji Nagar, State, ZIP</p>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.1771433392873!2d75.36435537582011!3d19.874740526411227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba2ed74555555%3A0x6b32bcf9d853089e!2sCidco%20Bus%20Stand!5e0!3m2!1sen!2sin!4v1712956747264!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="center">
+                <h2>Operation Center 2</h2>
+                <p>Address: 456 Elm Avenue, Townsville, State, ZIP</p>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.7473846560336!2d151.16380531525764!3d-33.88164862930957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b732d46f83ae299%3A0x3017a2efc415eb0!2s456%20Elm%20Ave%2C%20North%20Sydney%20NSW%202065%2C%20Australia!5e0!3m2!1sen!2suk!4v1649831116453!5m2!1sen!2suk"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="center">
+                <h2>Operation Center 3</h2>
+                <p>Address: 789 Oak Boulevard, Villagetown, State, ZIP</p>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.3455767363285!2d77.08891461490564!3d28.527673383830593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce42d41e134e7%3A0x9356f7c4660a1433!2s789%20Oak%20Blvd%2C%20Gurugram%2C%20Haryana%20122002%2C%20India!5e0!3m2!1sen!2suk!4v1649831144039!5m2!1sen!2suk"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="center">
+                <h2>Operation Center 4</h2>
+                <p>Address: 101 Pine Street, Hamletville, State, ZIP</p>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.9488778909297!2d-73.99276498489996!3d40.75067064305506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259011b018365%3A0x339edd2ec2742528!2s101%20Pine%20St%2C%20New%20York%2C%20NY%2010019%2C%20USA!5e0!3m2!1sen!2suk!4v1649831172689!5m2!1sen!2suk"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="center">
+                <h2>Operation Center 5</h2>
+                <p>Address: 202 Maple Avenue, Villageton, State, ZIP</p>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.1890718324824!2d-74.63152728513358!3d40.28262607936679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c38c4b8fb3c155%3A0x54676246cc72d78d!2s202%20Maple%20Ave%2C%20Millburn%2C%20NJ%2007041%2C%20USA!5e0!3m2!1sen!2suk!4v1649831195165!5m2!1sen!2suk"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="center">
+                <h2>Operation Center 6</h2>
+                <p>Address: 303 Cedar Street, Parkville, State, ZIP</p>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.8938954867417!2d144.97259851525744!3d-37.817539179753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad643c1650698f1%3A0xf1101d0a46435a85!2s303%20Cedar%20St%2C%20Richmond%20VIC%203203%2C%20Australia!5e0!3m2!1sen!2suk!4v1649831223643!5m2!1sen!2suk"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <!-- Add more center divs for other operation centers -->
+
+        </div>
+</body>
+
+</html>

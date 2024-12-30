@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waste Management System Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="index.css">
+
+  <style>
+    .navbarv {
+      background-color: black;
+      width: 18% !important;
+      height: 100vh;
+      /* adjust width as needed */
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .containers {
+      width: 100%;
+      display: flex;
+    }
+
+    .navv {
+      display: flex;
+      flex-direction: column;
+      padding-top: 120px;
+      /* adjust width as needed */
+    }
+
+    .navbarv a {
+      display: block;
+      padding: 30px 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbarv a:hover {
+      background-color: #333;
+      /* darker shade of black */
+    }
+  </style>
+</head>
+
+<body style="background-image:url('') !important">
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.webp" alt="Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service2.html">Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+
+      </ul>
+      <button class="call-us-btn">
+        <a href="tel:9665913598">Call Us Tollfree</a>
+      </button>
+      <div class="social-icons">
+
+        <a href="https://www.facebook.com/profile.php?id=100068163132836&mibextid=kFxxJD" target="_blank"><img
+            src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/pooja_rathod_26?utm_source=qr&igsh=cDE2aDQwc3gzajkx" target="_blank"><img
+            src="instagram.avif" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/pooja-rathod-b364a8266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"><img src="linkedin.avif" alt="LinkedIn"></a>
+
+      </div>
+
+    </nav>
+  </header>
+  <div class="containers">
+    <div class="navbarv">
+      <div class="navv">
+        <a href="vnav.html">FAQ</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="recycling.html">Recycling Centers</a>
+        <a href="ratings.html">Ratings & Reviews</a>
+        <a href="tow.html">Payment</a>
+      </div>
+    </div>
+    <!-- <header>
+    <h1>Waste Management System Dashboard</h1>
+  </header> -->
+
+    <main>
+      <div class="dashboard">
+        <div class="chart-container">
+          <canvas id="wasteChart"></canvas>
+        </div>
+        <div class="statistics">
+          <h2>Waste Collection Statistics</h2>
+          <p>Total Waste Collected: <span id="totalWasteCollected">500</span> kg</p>
+          <p>Last Collection Date: <span id="lastCollectionDate">March 20, 2024</span></p>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+
+</html>

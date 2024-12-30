@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.webp" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service2.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+
+            </ul>
+            <button class="call-us-btn">
+                <a href="tel:9665913598">Call Us Tollfree</a>
+            </button>
+            <div class="social-icons">
+
+                <a href="https://www.facebook.com/profile.php?id=100068163132836&mibextid=kFxxJD" target="_blank"><img
+                        src="facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/pooja_rathod_26?utm_source=qr&igsh=cDE2aDQwc3gzajkx"
+                    target="_blank"><img src="instagram.avif" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/pooja-rathod-b364a8266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"><img src="linkedin.avif" alt="LinkedIn"></a>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to the Garbage Management System!!</h2>
+            <p>This system helps in managing garbage collection, recycling centers, garbage types, and provides contact
+                information.</p>
+        </section>
+
+        <div class="center-content"> <!-- Wrap all content you want to center -->
+            <!-- Container div -->
+            <div class="container">
+                <!-- Upper button section to select the login or signup form -->
+                <div class="slider"></div>
+                <div class="btn">
+                    <button class="login">Login</button>
+                    <button class="signup">Signup</button>
+                </div>
+
+                <!-- Form section that contains thef login and the signup form -->
+                <div class="form-section">
+                    <!-- login form -->
+                    <div class="login-box">
+                        <input type="email" class="email ele" placeholder="youremail@email.com">
+                        <input type="password" class="password ele" placeholder="password">
+                        <!-- <button class="clkbtn">Login</button> -->
+                        <a href="vnav.html"><button class="clkbtn">Login</button></a>
+                    </div>
+
+
+
+                    <!-- signup form -->
+                    <div class="main">
+                        <div class="main">
+                            <h1>Registration</h1>
+                            <form action="">
+                                <label for="first">Enter your Full Name:-:</label>
+                                <input type="text" id="first" name="first" placeholder="Name" required>
+
+
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                                <label for="dob">Date of Birth:</label>
+                                <input type="date" id="dob" name="dob" placeholder="Enter your DOB" required>
+
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" placeholder="Enter your password"
+                                    pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" required title="Password must contain at least one number, 
+                                        one alphabet, one symbol, and be at 
+                                        least 8 characters long">
+
+                                <label for="repassword">Re-type Password:</label>
+                                <input type="password" id="repassword" name="repassword"
+                                    placeholder="Re-Enter your password" required>
+                                <span id="pass"></span>
+
+                                <label for="mobile">Contact:</label>
+                                <input type="text" id="mobile" name="mobile" placeholder="Enter your Mobile Number"
+                                    required maxlength="10">
+
+                                <label for="gender">Gender:</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+
+                                <label for="address">Address:</label>
+                                <input type="text" id="address" name="address" placeholder="Enter your address"
+                                    required>
+
+                                <div class="wrap">
+                                    <button type="submit" onclick="solve()">
+                                        Submit
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        </form>
+                    </div>
+
+                    <script src="contact.js"></script>
+                </div>
+                <!-- <button class="open-popup-btn">Open Popup</button>
+
+                <div class="popup-container">
+                    <div class="popup">
+                        <div class="popup-content">
+                            <h2>Welcome!</h2>
+                            <button class="close-popup-btn">Close</button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- End of Container div -->
+
+            <section>
+                <h2>About Us</h2>
+                <b>
+                    <p>Welcome to the Garbage Management System.
+                </b> <br><b>We are dedicated to providing efficient waste management solutions for a cleaner
+                    environment.</b></p>
+                <img src="img2.avif" alt="About Image"> <!-- Add the image here -->
+            </section>
+
+            <section id="services">
+                <h2>Our Services</h2>
+                <div class="service">
+                    <img src="img3.webp" alt="Waste Collection">
+                    <ul>
+                        <li>
+                            <h3>Waste Collection</h3>
+                        </li>
+                    </ul>
+                    <p>We provide efficient waste collection services to help keep your surroundings clean and healthy.
+                    </p>
+                </div>
+                <div class="service">
+                    <ul>
+                        <li>
+                            <h3>Recycling</h3>
+                        </li>
+                    </ul>
+                    <p>We promote recycling initiatives to minimize waste and conserve resources for a sustainable
+                        future.</p>
+                </div>
+                <div class="service">
+                    <ul>
+                        <li>
+                            <h3>Waste Disposal</h3>
+                        </li>
+                    </ul>
+                    <p>We ensure safe and responsible waste disposal methods to protect the environment and public
+                        health.</p>
+                </div>
+            </section>
+        </div>
+        <!-- End of center-content -->
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Waste Management</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

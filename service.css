@@ -1,0 +1,28 @@
+body {
+    margin-top: 100px !important;
+  background-image: url('your-image-url.jpg'); /* Replace 'your-image-url.jpg' with your actual image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Keeps the background image fixed while scrolling */
+  }
+  
+  .services {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* max-width: 1800px;
+    max-height: 1800px; */
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust alpha value here */
+    margin-top: 10px;
+    margin-bottom: auto;
+  }
+  
+  .service {
+    flex-basis: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Adjust alpha value here if needed */
+    border-radius: 100px;
+  }
+  

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="index.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: black;
+      width: 18%;
+      height: 100vh;
+      position: sticky;
+      left: 0;
+      /* adjust width as needed */
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      padding-top: 170px;
+      /* adjust width as needed */
+    }
+
+    .navbar a {
+      display: block;
+      padding: 30px 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #333;
+      /* darker shade of black */
+    }
+
+    .containerss {
+      max-width: 600px;
+      margin: 50px auto;
+      height: 500px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    #payment-type label {
+      margin-right: 10px;
+    }
+
+    #submit-payment {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #submit-payment:hover {
+      background-color: #45a049;
+    }
+
+    .navbarv {
+      background-color: black;
+      width: 18%;
+      height: 100vh;
+      /* adjust width as needed */
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .containers {
+      width: 100%;
+      display: flex;
+    }
+
+    .navv {
+      display: flex;
+      flex-direction: column;
+      padding-top: 120px;
+      /* adjust width as needed */
+    }
+
+    .navbarv a {
+      display: block;
+      padding: 30px 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbarv a:hover {
+      background-color: #333;
+      /* darker shade of black */
+    }
+  </style>
+</head>
+
+<body style="background-image:url('') !important">
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.webp" alt="Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service2.html">Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="call-us-btn">
+        <a href="tel:9665913598">Call Us Tollfree</a>
+      </button>
+      <div class="social-icons">
+
+        <a href="https://www.facebook.com/profile.php?id=100068163132836&mibextid=kFxxJD" target="_blank"><img
+            src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/pooja_rathod_26?utm_source=qr&igsh=cDE2aDQwc3gzajkx" target="_blank"><img
+            src="instagram.avif" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/pooja-rathod-b364a8266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"><img src="linkedin.avif" alt="LinkedIn"></a>
+
+      </div>
+
+    </nav>
+  </header>
+  <div class="containers">
+
+    <div class="navbarv">
+      <div class="navv">
+        <a href="vnav.html">FAQ</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="recycling.html">Recycling Centers</a>
+        <a href="ratings.html">Ratings & Reviews</a>
+        <a href="tow.html">Payment</a>
+      </div>
+    </div>
+    <div class="containerss">
+      <h1>Choose Your Payment Method</h1>
+      <div id="payment-type">
+        <input type="radio" id="card" name="payment-method" value="card" checked>
+        <label for="card">Credit/Debit Card</label>
+        <input type="radio" id="upi" name="payment-method" value="upi">
+        <label for="upi">UPI</label>
+      </div>
+
+      <form id="payment-form">
+        <div id="card-details">
+          <label for="card-number">Card Number:</label>
+          <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" maxlength="19"
+            required>
+          <label for="card-holder">Card Holder Name:</label>
+          <input type="text" id="card-holder" name="card-holder" placeholder="John Doe" required>
+          <label for="expiry-date">Expiry Date:</label>
+          <input type="date" id="expiry-date" name="expiry-date" required>
+          <label for="cvv">CVV:</label>
+          <input type="password" id="cvv" name="cvv" placeholder="123" maxlength="3" required>
+        </div>
+        <div id="upi-details" style="display: none;">
+          <label for="upi-id">UPI ID:</label>
+          <input type="text" id="upi-id" name="upi-id" placeholder="example@upi">
+        </div>
+        <button type="submit" id="submit-payment">Submit Payment</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("payment-type").addEventListener("change", function () {
+      const cardDetails = document.getElementById("card-details");
+      const upiDetails = document.getElementById("upi-details");
+
+      if (document.getElementById("card").checked) {
+        cardDetails.style.display = "block";
+        upiDetails.style.display = "none";
+      } else if (document.getElementById("upi").checked) {
+        cardDetails.style.display = "none";
+        upiDetails.style.display = "block";
+      }
+    });
+
+    document.getElementById("payment-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      let paymentDetails;
+
+      if (document.getElementById("card").checked) {
+        paymentDetails = {
+          method: "Card",
+          cardNumber: document.getElementById("card-number").value,
+          cardHolder: document.getElementById("card-holder").value,
+          expiryDate: document.getElementById("expiry-date").value,
+          cvv: document.getElementById("cvv").value
+        };
+      } else if (document.getElementById("upi").checked) {
+        paymentDetails = {
+          method: "UPI",
+          upiId: document.getElementById("upi-id").value
+        };
+      }
+
+      // Dummy alert for demonstration
+      alert("Payment submitted via " + paymentDetails.method + "\nDetails: " + JSON.stringify(paymentDetails));
+    });
+
+    // JavaScript code for making AJAX requests
+fetch('/api/data')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        // Handle the data received from the backend
+        console.log(data);
+    })
+    .catch(error => {
+        // Handle errors
+        console.error('There was a problem with the fetch operation:', error);
+    });
+
+  </script>
+</body>
+
+</html>

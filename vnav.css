@@ -1,0 +1,131 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Vertical Navbar styles */
+.vertical-navbar {
+  height: 100%;
+  width: 200px; /* Width of the vertical navbar */
+  position: fixed; /* Fixed position */
+  top: 0; /* Position at the top of the page */
+  left: 0; /* Position at the left side of the page */
+  background-color: #25de38; /* Background color */
+  padding-top: 20px; /* Add some top padding */
+}
+
+.vertical-navbar a {
+  padding: 10px; /* Add padding to each link */
+  text-decoration: none; /* Remove underline */
+  color: rgb(13, 11, 11); /* Text color */
+  display: block; /* Display links as blocks */
+}
+
+/* .vertical-navbar a:hover { */
+  /* background-color: #f5efef; */
+   /* Change background color on hover */
+
+/* } */
+
+/* Page content styles */
+.content {
+  margin-left: 200px; /* Adjust margin to make space for the vertical navbar */
+  padding: 20px; /* Add padding */
+}
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FAQ Section styles */
+.faq {
+  width: 80%;
+  /* max-width: 600px; */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.faq h2 {
+  text-align: center;
+}
+
+/* FAQ List styles */
+.faq ul {
+  list-style-type: none;
+}
+
+.faq li {
+  margin-bottom: 20px;
+}
+
+/* Question button styles */
+.question {
+  background-color: #d7d0d0;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  
+}
+
+/* Answer styles */
+.answer {
+  display: none; /* Hide answers by default */
+  padding: 10px;
+  background-color: #96d5e5;
+}
+
+/* Show answer when question button is clicked */
+.question:hover + .answer {
+  display: block;
+}
+
+/* Chatbot Container styles */
+#chatbot-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Chatbot Messages styles */
+#chatbot-messages {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  /* border-bottom: 1px solid #ccc; */
+}
+#chatbot-heading{ display: flex;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;}
+/* User input and send button styles */
+#user-input {
+  width: calc(100% - 70px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#send-btn {
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+

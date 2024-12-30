@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+
+
+        .containerss {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            height: 800px;
+            overflow-y: scroll;
+        }
+
+        .testimonial {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fafafa;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial p {
+            margin: 0;
+        }
+
+        .author {
+            margin-top: 15px;
+            font-style: italic;
+            color: #777;
+        }
+
+        .profile-icon {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: linear-gradient(45deg, #65d8cf, #6cdbeb);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-icon img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .timing {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .ratings {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .ratings h2 {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .star-rating {
+            display: inline-block;
+            font-size: 24px;
+            color: #ffd700;
+        }
+
+        .rate-now {
+            text-align: center;
+        }
+
+        .rate-now button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .rate-now button:hover {
+            background-color: #0056b3;
+        }
+
+        .review-form {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .review-form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        .review-form .submit-btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .review-form .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .navbarv {
+            background-color: black;
+            width: 18%;
+            height: 100vh;
+            /* adjust width as needed */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .containers {
+            width: 100%;
+            display: flex;
+        }
+
+        .navv {
+            display: flex;
+            flex-direction: column;
+            padding-top: 120px;
+            /* adjust width as needed */
+        }
+
+        .navbarv a {
+            display: block;
+            padding: 30px 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbarv a:hover {
+            background-color: #333;
+            /* darker shade of black */
+        }
+    </style>
+</head>
+
+<body style="background-image:url('') !important">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.webp" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service2.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+
+            </ul>
+            <button class="call-us-btn">
+                <a href="tel:9665913598">Call Us Tollfree</a>
+            </button>
+            <div class="social-icons">
+
+                <a href="https://www.facebook.com/profile.php?id=100068163132836&mibextid=kFxxJD" target="_blank"><img
+                        src="facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/pooja_rathod_26?utm_source=qr&igsh=cDE2aDQwc3gzajkx"
+                    target="_blank"><img src="instagram.avif" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/pooja-rathod-b364a8266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"><img src="linkedin.avif" alt="LinkedIn"></a>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="containers">
+
+        <div class="navbarv">
+            <div class="navv">
+                <a href="vnav.html">FAQ</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="recycling.html">Recycling Centers</a>
+                <a href="ratings.html">Ratings & Reviews</a>
+                <a href="tow.html">Payment</a>
+            </div>
+        </div>
+        <div class="containerss">
+            <div class="ratings">
+                <h2>Overall Ratings</h2>
+                <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            </div>
+
+            <div id="testimonialContainer">
+                <!-- Testimonials will be dynamically added here -->
+            </div>
+
+            <div class="rate-now" id="rateNowSection">
+                <button id="rateNowBtn">Rate Now</button>
+                <div class="review-form" id="reviewForm">
+                    <textarea placeholder="Write your review..." rows="4"></textarea>
+                    <input type="number" min="1" max="5" placeholder="Enter your rating (1-5)" id="ratingInput">
+                    <button class="submit-btn" id="submitBtn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Testimonial data
+        const testimonials = [
+            { text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", author: "John Doe", timing: "2 hours ago", profileImg: "https://via.placeholder.com/150" },
+            { text: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.", author: "Jane Smith", timing: "1 day ago", profileImg: "https://via.placeholder.com/150" },
+            { text: "Nullam eleifend justo non pretium vehicula.", author: "David Johnson", timing: "3 days ago", profileImg: "https://via.placeholder.com/150" },
+            { text: "Fusce rhoncus semper arcu, ut hendrerit quam bibendum id.", author: "Emily Brown", timing: "1 week ago", profileImg: "https://via.placeholder.com/150" },
+            { text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.", author: "Michael Williams", timing: "2 weeks ago", profileImg: "https://via.placeholder.com/150" },
+            { text: "Mauris tempus rutrum arcu, in congue purus suscipit quis.", author: "Sarah Wilson", timing: "3 weeks ago", profileImg: "https://via.placeholder.com/150" },
+            { text: "Duis vehicula vestibulum libero, in dapibus urna sagittis et.", author: "Alex Martinez", timing: "1 month ago", profileImg: "https://via.placeholder.com/150" },
+            { text: "Integer eu magna vitae felis blandit bibendum quis nec orci.", author: "Jessica Taylor", timing: "2 months ago", profileImg: "https://via.placeholder.com/150" },
+            { text: "Etiam at lectus a tellus malesuada aliquam.", author: "Daniel Clark", timing: "3 months ago", profileImg: "https://via.placeholder.com/150" },
+            { text: "Quisque pretium posuere nisl, eu tempus nisi rhoncus sed.", author: "Laura Lee", timing: "6 months ago", profileImg: "https://via.placeholder.com/150" }
+        ];
+
+        // Function to generate testimonials HTML
+        function generateTestimonials() {
+            const container = document.getElementById('testimonialContainer');
+            testimonials.forEach(testimonial => {
+                const div = document.createElement('div');
+                div.classList.add('testimonial');
+                div.innerHTML = `
+                    <div class="profile-icon">
+                        <img src="${testimonial.profileImg}" alt="Profile">
+                    </div>
+                    <p>${testimonial.text}</p>
+                    <p class="author">${testimonial.author} - <span class="timing">${testimonial.timing}</span></p>
+                    <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        // Call the function to generate testimonials
+        generateTestimonials();
+
+        // Rate Now button click event
+        const rateNowBtn = document.getElementById('rateNowBtn');
+        const reviewForm = document.getElementById('reviewForm');
+
+        rateNowBtn.addEventListener('click', () => {
+            rateNowBtn.style.display = 'none';
+            reviewForm.style.display = 'block';
+        });
+
+        // Submit button click event
+        const submitBtn = document.getElementById('submitBtn');
+        const ratingInput = document.getElementById('ratingInput');
+        const reviewTextArea = document.querySelector('.review-form textarea');
+
+        submitBtn.addEventListener('click', () => {
+            const reviewText = reviewTextArea.value;
+            const ratingValue = ratingInput.value;
+
+            // Handle the review submission (you can add your logic here)
+
+            // Reset form
+            reviewTextArea.value = '';
+            ratingInput.value = '';
+            reviewForm.style.display = 'none';
+            rateNowBtn.style.display = 'block';
+        });
+
+        // JavaScript code for making AJAX requests
+fetch('/api/data')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        // Handle the data received from the backend
+        console.log(data);
+    })
+    .catch(error => {
+        // Handle errors
+        console.error('There was a problem with the fetch operation:', error);
+    });
+
+    </script>
+</body>
+
+</html>

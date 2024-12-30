@@ -1,0 +1,73 @@
+ body{
+  margin: 0;
+  padding: 0;
+ }
+  header {
+    background-color: #333;
+    padding: 20px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    margin-left: 50px;
+    height: 80px; /* Adjust height as needed */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  /* Change color on hover */
+  .nav-links a:hover {
+    color: #ffcc00; /* Change to your desired color */
+  }
+  
+  /* Change color for active section */
+  .nav-links a.active {
+    color: #ffcc00; /* Change to your desired color */
+  }
+  
+  .social-icons {
+    display: flex;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    height: 30px; /* Adjust height as needed */
+  }
+  .call-us-btn {
+    background-color: #ffcc00; /* Change to your desired button color */
+    color: #333; /* Change to your desired text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  .call-us-btn a{
+    color:black;
+  }
+  .call-us-btn:hover {
+    background-color: #33ffcf; /* Change to your desired hover color */
+  }

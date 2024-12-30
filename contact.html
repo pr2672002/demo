@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="index.css">
+
+	<style>
+		header {
+			background-color: #333;
+			padding: 20px 0;
+		}
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo img {
+			margin-left: 50px;
+			height: 80px;
+			/* Adjust height as needed */
+		}
+
+		/* .nav-links {
+			list-style: none;
+			display: flex;
+			margin: 0;
+			padding: 0;
+		}
+
+		.nav-links li {
+			margin-right: 20px;
+		}
+
+		.nav-links a {
+			color: #fff;
+			text-decoration: none;
+			transition: color 0.3s ease;
+			/* Smooth color transition 
+		}
+
+		/* Change color on hover */
+		/* .nav-links a:hover {
+			color: #ffcc00;
+			/* Change to your desired color 
+		}
+
+		/* Change color for active section */
+		/* .nav-links a.active {
+			color: #ffcc00;
+			/* Change to your desired color 
+		}  */
+
+		.social-icons {
+			display: flex;
+		}
+
+		.social-icons a {
+			margin-right: 10px;
+		}
+
+		.social-icons img {
+			height: 30px;
+			/* Adjust height as needed */
+		}
+
+		  /* .call-us-btn {
+			background-color: #ffcc00;
+			/*  Change to your desired button color  */
+			/* color: #333;
+			/*  Change to your desired text color  */
+			/* border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease; */
+			/* Smooth background color transition  */
+		  /* }  */
+
+		/* .call-us-btn a {
+			color: black;
+			text-decoration: none;
+		}
+
+		.call-us-btn:hover {
+			background-color: #33ffcf;
+			/* Change to your desired hover color  
+		/* }  */
+
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f8f8f8;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			width: 80%;
+			margin: 0 auto;
+			padding-top: 50px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.contact-section {
+			background-color: #eaeaea;
+			/* Background color for contact section */
+			/* padding: 10px; */
+			margin-top: -30px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			/* margin-bottom: 30px; */
+			width: 100%;
+		}
+
+		h1 {
+			/* margin-bottom: 30px; */
+			color: #333;
+			width: 100%;
+			text-align: center;
+		}
+
+		.contact-info {
+			display: flex;
+			margin-bottom: 0px;
+			text-align: left;
+		}
+
+		.contact-info p {
+			color: #555;
+			font-size: 18px;
+			padding: 40px;
+			margin: 10px 0;
+		}
+
+		.contact-form {
+			width: 50%;
+			/* max-width: 600px; */
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+		}
+
+		.contact-form .input-fields {
+			/* width: calc(50% - 10px); */
+			/* margin-right: 20px; */
+		}
+
+		.map {
+			width: 100%;
+			max-width: 600px;
+			margin-left: auto;
+			/* Align map to the right */
+			margin-bottom: 50px;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="tel"],
+		textarea {
+			width: calc(100% - 22px);
+			padding: 10px;
+			margin-bottom: 20px;
+			border: none;
+			background-color: #fff;
+			border: 2px solid #ddd;
+			border-radius: 5px;
+			font-size: 16px;
+			transition: border-color 0.3s ease;
+		}
+
+		input[type="text"]:focus,
+		input[type="email"]:focus,
+		input[type="tel"]:focus,
+		textarea:focus {
+			outline: none;
+			border-color: #333;
+		}
+
+		textarea {
+			height: 150px;
+		}
+
+		button {
+			padding: 12px 24px;
+			background-color: #333;
+			color: #fff;
+			border: none;
+			cursor: pointer;
+			border-radius: 5px;
+			font-size: 18px;
+			transition: background-color 0.3s ease;
+		}
+
+		button:hover {
+			background-color: #555;
+		}
+
+		/* Footer styles */
+		footer {
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			padding: 20px 0;
+			margin-top: 100px;
+			width: 100%;
+			position: fixed;
+			bottom: 0;
+		}
+
+		footer p {
+			margin: 5px 0;
+		}
+
+		.contact {
+			width: 100%;
+			margin: 30px;
+			display: flex;
+
+		}
+
+		/* Media query for smaller screens */
+		@media screen and (max-width: 768px) {
+			.container {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.contact-form .input-fields {
+				width: 100%;
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+
+			.map {
+				width: 100%;
+				max-width: none;
+				margin-left: 0;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<img src="logo.webp" alt="Logo">
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="service2.html">Service</a></li>
+				<li><a href="contact.html">Contact</a></li>
+
+			</ul>
+			<button class="call-us-btn">
+				<a href="tel:9665913598">Call Us Tollfree</a>
+			</button>
+			<div class="social-icons">
+
+				<a href="https://www.facebook.com/profile.php?id=100068163132836&mibextid=kFxxJD" target="_blank"><img
+						src="facebook.png" alt="Facebook"></a>
+				<a href="https://www.instagram.com/pooja_rathod_26?utm_source=qr&igsh=cDE2aDQwc3gzajkx"
+					target="_blank"><img src="instagram.avif" alt="Instagram"></a>
+				<a href="https://www.linkedin.com/in/pooja-rathod-b364a8266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+					target="_blank"><img src="linkedin.avif" alt="LinkedIn"></a>
+
+			</div>
+
+		</nav>
+	</header>
+	<div class="container">
+		<div class="contact-section">
+			<h1>Contact Us</h1>
+			<div class="contact-info">
+				<span>
+					<p><strong>Company Name:</strong> Waste Management Services</p>
+				</span>
+				<span>
+					<p><strong>Email:</strong> wms@gmail.com</p>
+				</span>
+				<p><strong>Contact Number:</strong> +91 9665913598</p>
+			</div>
+			<div class="contact">
+				<div class="contact-form">
+					<div class="input-fields">
+						<input type="text" id="name" name="name" placeholder="Your Name" required>
+						<input type="email" id="email" name="email" placeholder="Your Email" required>
+						<input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+						<textarea id="message" name="message" placeholder="Your Message" required></textarea>
+					</div>
+					<div>
+
+						<button type="submit">Send</button>
+					</div>
+				</div>
+				<div class="map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30028.677067034245!2d75.24024902901749!3d19.81520099672465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb9bfb142f5b77%3A0x4c501d10ef0cce53!2sInternational%20Centre%20of%20Excellence%20in%20Engineering%20%26%20Management!5e0!3m2!1sen!2sin!4v1712950006831!5m2!1sen!2sin"
+						width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<!-- <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.727728839898!2d-122.40889168467781!3d37.77857197975908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858084517cb959%3A0x49f741f8f44a98f3!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1617321085119!5m2!1sen!2sus"
+            width="500" height="350" style="border:0; margin-top: 0;" allowfullscreen="" loading="lazy"></iframe> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2024 Waste Management Services. All rights reserved.</p>
+		<p>Email: wms@gmail.com | Phone: +91 9665913598</p>
+	</footer>
+
+	<script>
+		document.getElementById('contactForm').addEventListener('submit', function (event) {
+			event.preventDefault();
+			// You can add your form submission logic here
+			// For now, let's just alert a message
+			alert('Your message has been sent!');
+		});
+
+		// JavaScript code for making AJAX requests
+        fetch('/api/data')
+        .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+        })
+        .then(data => {
+        // Handle the data received from the backend
+        console.log(data);
+        })
+         .catch(error => {
+        // Handle errors
+        console.error('There was a problem with the fetch operation:', error);
+    });
+
+	</script>
+</body>
+
+</html>
